@@ -17,7 +17,6 @@ class MovieContainer extends Component {
       movie
     } = this.props;
     if (!movie || movie.id.toString() !== movieId) {
-      console.log("fetching movie");
       // fetch Movie with id
       fetchMovie(movieId);
     }

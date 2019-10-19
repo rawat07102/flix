@@ -20,16 +20,13 @@ class MoviesContainer extends Component {
       history.replace("/");
     }
     if (page > 1 && searchQuery) return;
-    console.log(
-      `[moviesContainer CDM] searchQuery: ${searchQuery} page: ${page}`
-    );
+
     fetchMoviesList(page);
   }
 
   handleObserver = (inView, entry) => {
     const { fetchMoviesList, page, searchQuery } = this.props;
     if (searchQuery) return;
-    console.log("[handleObserver]", inView);
     if (inView) fetchMoviesList(page);
   };
 

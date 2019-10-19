@@ -17,7 +17,6 @@ function* fetchMoviesList({ payload: page }) {
   try {
     const response = yield call(axios.get, `/movie/popular?page=${page}`);
     const moviesList = response.data;
-    yield console.log("[movies saga]", moviesList);
     yield all([
       yield put(fetchMoviesSuccess(moviesList.results)),
       yield put(setPageNumber(page + 1))
