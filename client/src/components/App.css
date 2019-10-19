@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgb(0, 188, 212, 0.2) 15%, rgb(0, 188, 212, 0.1) 40%, rgb(0, 188, 212, 0.2) 90%)
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
