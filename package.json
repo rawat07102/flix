@@ -11,6 +11,10 @@
     "node-fetch": "^2.6.0",
     "universal-config": "^0.3.0"
   },
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.4.1"
+  },
   "devDependencies": {
     "nodemon": "^1.19.2"
   },
