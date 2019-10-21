@@ -13,7 +13,9 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     opacity: 0.95,
     [theme.breakpoints.down("xs")]: {
-      flexDirection: "column"
+      flexDirection: "column",
+      overflowY: "scroll",
+      height: "700px"
     }
   },
   headerContainer: {
@@ -28,8 +30,11 @@ const useStyles = makeStyles(theme => ({
     width: "400px",
     minWidth: "400px",
     [theme.breakpoints.down("xs")]: {
-      height: "450  px",
-      width: "300px"
+      width: "300px",
+      minHeight: "600px",
+      backgroundAttachment: "fixed",
+      backgroundSize: "contain",
+      backgroundPosition: "center"
     }
   },
   date: {
