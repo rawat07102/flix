@@ -33,7 +33,7 @@ const NavBar = () => {
   ) : (
     <Fragment>
       <SearchBar></SearchBar>
-      <Button component={Link} to="/" color="inherit" className={classes.link}>
+      <Button component={Link} to="/" color="inherit">
         Movies
       </Button>
       <Button component={Link} to="/account" color="inherit">

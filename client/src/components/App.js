@@ -43,9 +43,9 @@ const App = () => {
         maxWidth="lg"
       >
         <Switch>
-          <Route path="/" exact component={Movies} />
           <Route path="/movies/search" exact component={Movies} />
           <Route path="/movies/:movieId" exact component={Movie} />
+          <Route path="/" exact component={Movies} />
         </Switch>
       </Container>
     </MuiThemeProvider>

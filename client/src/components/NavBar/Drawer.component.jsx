@@ -15,6 +15,7 @@ import InputBase from "@material-ui/core/InputBase";
 
 const useStyles = makeStyles(theme => ({
   muiPaperRoot: {
+    minWidth: "150px",
     width: "30vw",
     backgroundColor: theme.palette.primary.light
   },

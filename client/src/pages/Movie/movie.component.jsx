@@ -11,7 +11,10 @@ import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles(theme => ({
   card: {
     display: "flex",
-    opacity: 0.95
+    opacity: 0.95,
+    [theme.breakpoints.down("xs")]: {
+      flexDirection: "column"
+    }
   },
   headerContainer: {
     display: "flex",
@@ -23,7 +26,11 @@ const useStyles = makeStyles(theme => ({
   posterImg: {
     height: "600px",
     width: "400px",
-    minWidth: "400px"
+    minWidth: "400px",
+    [theme.breakpoints.down("xs")]: {
+      height: "450  px",
+      width: "300px"
+    }
   },
   date: {
     alignSelf: "flex-start"
